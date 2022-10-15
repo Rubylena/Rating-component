@@ -77,23 +77,24 @@ main{
             justify-content: center;
             gap: 1em;
             font-weight: $font-weight-700;
-            p{
+            button{
                 background: $Light-Grey-a;
                 color: $Medium-Grey;
                 padding: 0.8em 1.2em;
                 border-radius: 100%;
                 cursor: pointer;
+                border: none;
                 &:hover{
                     background: $Orange;
                     color: $White;
                 }
-            }
-            .selected{
-                background: $Light-Grey;
-                color: $White;
+                &:focus{
+                    background: $Light-Grey;
+                    color: $White;
+                }
             }
         }
-        button{
+        #submit{
             background: $Orange;
             color: $White;
             font-weight: $font-weight-700;

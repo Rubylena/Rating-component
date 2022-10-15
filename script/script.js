@@ -1,24 +1,18 @@
 const Result = document.getElementById('result');
 
-// select values and send to the results page
-const result = (e) => {
-    e.target.classList.add('selected');
+const content = document.querySelectorAll('.value');
+content.forEach( content => {
+    content.addEventListener('click', function(){
 
-    const value = e.target.innerHTML;
-    Result.innerHTML = value;
-}
+        Result.innerHTML = content.innerHTML;
+    });
+});
 
-const para = [
-{id: 'one', command: document.getElementById('one').onclick = result},
-{id: 'two', command: document.getElementById('two').onclick = result},
-{id: 'three', command: document.getElementById('three').onclick = result},
-{id: 'four', command: document.getElementById('four').onclick = result},
-{id: 'five', command: document.getElementById('five').onclick = result}
-]
 // switch pages
 const Submit = document.getElementById('submit');
 const Thanks = document.getElementById('thanks');
 const Home = document.getElementById('home');
+
 const thankYouPage = () => {
     if (Submit.id == 'submit'){
         Thanks.classList.add('show');
@@ -28,3 +22,10 @@ const thankYouPage = () => {
     }
 }
 Submit.addEventListener('click', thankYouPage);
+
+const home = ()=>{
+    Thanks.classList.remove('show');
+    Thanks.classList.add('hide')
+    Home.classList.remove('hide');
+    Home.classList.add('show');
+}

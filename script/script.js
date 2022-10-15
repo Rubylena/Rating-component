@@ -10,10 +10,10 @@ const result = (e) => {
 
 const para = [
 {id: 'one', command: document.getElementById('one').onclick = result},
-{'two': document.getElementById('two').onclick = result},
-{'three': document.getElementById('three').onclick = result},
-{'four': document.getElementById('four').onclick = result},
-{'five': document.getElementById('five').onclick = result}
+{id: 'two', command: document.getElementById('two').onclick = result},
+{id: 'three', command: document.getElementById('three').onclick = result},
+{id: 'four', command: document.getElementById('four').onclick = result},
+{id: 'five', command: document.getElementById('five').onclick = result}
 ]
 // switch pages
 const Submit = document.getElementById('submit');
